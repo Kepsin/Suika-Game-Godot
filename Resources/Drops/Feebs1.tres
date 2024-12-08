@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://dgwgvncqr08uf"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_shg87"]
+[ext_resource type="Texture2D" uid="uid://bcrbvk1pfxwsd" path="res://Assets/Water Pokes/feebas.png" id="2_5g24w"]
+
+[resource]
+script = ExtResource("1_shg87")
+sprite = ExtResource("2_5g24w")
+order_number = 0
+size = 1.0

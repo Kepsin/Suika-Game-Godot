@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://cre8lpcvss3tq"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_fx46f"]
+[ext_resource type="Texture2D" uid="uid://rchty5m3vfix" path="res://Assets/Water Pokes/vaporeon.png" id="2_pqjb4"]
+
+[resource]
+script = ExtResource("1_fx46f")
+sprite = ExtResource("2_pqjb4")
+order_number = 4
+size = 2.0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://bxhr4y6qn7bfk"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_30k2o"]
+[ext_resource type="Texture2D" uid="uid://pgodbtx2fhin" path="res://Assets/Water Pokes/spheal.png" id="2_odoma"]
+
+[resource]
+script = ExtResource("1_30k2o")
+sprite = ExtResource("2_odoma")
+order_number = 1
+size = 1.25

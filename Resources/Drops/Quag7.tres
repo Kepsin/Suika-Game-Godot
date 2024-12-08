@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://dyn5bnw23fsw5"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_dtkqo"]
+[ext_resource type="Texture2D" uid="uid://dhdi8wb2j1opk" path="res://Assets/Water Pokes/quagsire-f.png" id="2_xxr06"]
+
+[resource]
+script = ExtResource("1_dtkqo")
+sprite = ExtResource("2_xxr06")
+order_number = 6
+size = 2.5

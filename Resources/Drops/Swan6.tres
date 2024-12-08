@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://73ymtl323bkg"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_tauif"]
+[ext_resource type="Texture2D" uid="uid://b2gw4iw8gj3l8" path="res://Assets/Water Pokes/swanna.png" id="2_dgskm"]
+
+[resource]
+script = ExtResource("1_tauif")
+sprite = ExtResource("2_dgskm")
+order_number = 5
+size = 2.25

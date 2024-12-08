@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://4bjpjylamv87"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_sh2wj"]
+[ext_resource type="Texture2D" uid="uid://dejo1fovifiyt" path="res://Assets/Water Pokes/squirtle.png" id="2_4t6bc"]
+
+[resource]
+script = ExtResource("1_sh2wj")
+sprite = ExtResource("2_4t6bc")
+order_number = 2
+size = 1.5

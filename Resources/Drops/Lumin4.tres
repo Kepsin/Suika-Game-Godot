@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://bdfemecunxogg"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_wyjcr"]
+[ext_resource type="Texture2D" uid="uid://beye6t514l1uk" path="res://Assets/Water Pokes/lumineon-f.png" id="2_dwx47"]
+
+[resource]
+script = ExtResource("1_wyjcr")
+sprite = ExtResource("2_dwx47")
+order_number = 3
+size = 1.75

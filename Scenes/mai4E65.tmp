@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://uq4ix5fl3ql2"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_m5joe"]
+[ext_resource type="PackedScene" uid="uid://jn7127g81ugj" path="res://Scenes/box.tscn" id="1_uke5t"]
+[ext_resource type="PackedScene" uid="uid://cxq35r4qijama" path="res://Scenes/dropper.tscn" id="3_3kfa0"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_m5joe")
+
+[node name="Dropper" parent="." instance=ExtResource("3_3kfa0")]
+position = Vector2(571, 10)
+
+[node name="Box" parent="." instance=ExtResource("1_uke5t")]
+position = Vector2(579, 363)
+scale = Vector2(0.700953, 0.700953)

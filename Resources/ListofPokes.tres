@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=13 format=3 uid="uid://ddhx50mrxcmjp"]
+
+[ext_resource type="Resource" uid="uid://dgwgvncqr08uf" path="res://Resources/Drops/Feebs1.tres" id="1_sdmna"]
+[ext_resource type="Script" path="res://Resources/DropsList.gd" id="1_y2foh"]
+[ext_resource type="Resource" uid="uid://bxhr4y6qn7bfk" path="res://Resources/Drops/Spheal2.tres" id="2_too05"]
+[ext_resource type="Resource" uid="uid://4bjpjylamv87" path="res://Resources/Drops/Squirtle3.tres" id="3_euk6i"]
+[ext_resource type="Resource" uid="uid://bdfemecunxogg" path="res://Resources/Drops/Lumin4.tres" id="4_34sqm"]
+[ext_resource type="Resource" uid="uid://cre8lpcvss3tq" path="res://Resources/Drops/Vap5.tres" id="5_f0sog"]
+[ext_resource type="Resource" uid="uid://73ymtl323bkg" path="res://Resources/Drops/Swan6.tres" id="6_pq7et"]
+[ext_resource type="Resource" uid="uid://dyn5bnw23fsw5" path="res://Resources/Drops/Quag7.tres" id="7_mvrne"]
+[ext_resource type="Resource" uid="uid://c4fdthfig0ime" path="res://Resources/Drops/Simi8.tres" id="8_ycx20"]
+[ext_resource type="Resource" uid="uid://crvj1pl5bgo6q" path="res://Resources/Drops/Keldeo9.tres" id="9_47yfh"]
+[ext_resource type="Resource" uid="uid://4gpde82ltos0" path="res://Resources/Drops/Suicune10.tres" id="10_vw0xu"]
+[ext_resource type="Resource" uid="uid://vnx5f75cv4y5" path="res://Resources/Drops/Palkia11.tres" id="11_8igec"]
+
+[resource]
+script = ExtResource("1_y2foh")
+dropList = [ExtResource("1_sdmna"), ExtResource("2_too05"), ExtResource("3_euk6i"), ExtResource("4_34sqm"), ExtResource("5_f0sog"), ExtResource("6_pq7et"), ExtResource("7_mvrne"), ExtResource("8_ycx20"), ExtResource("9_47yfh"), ExtResource("10_vw0xu"), ExtResource("11_8igec")]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://4gpde82ltos0"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_r5q3y"]
+[ext_resource type="Texture2D" uid="uid://ykoajuxueymt" path="res://Assets/Water Pokes/suicune.png" id="2_gp3db"]
+
+[resource]
+script = ExtResource("1_r5q3y")
+sprite = ExtResource("2_gp3db")
+order_number = 9
+size = 3.25

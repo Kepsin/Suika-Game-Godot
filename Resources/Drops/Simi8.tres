@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://c4fdthfig0ime"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_jtt18"]
+[ext_resource type="Texture2D" uid="uid://cswx6cfiu8ixe" path="res://Assets/Water Pokes/simipour.png" id="2_hgmnv"]
+
+[resource]
+script = ExtResource("1_jtt18")
+sprite = ExtResource("2_hgmnv")
+order_number = 7
+size = 2.75

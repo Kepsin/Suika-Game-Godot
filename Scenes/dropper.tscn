@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxq35r4qijama"]
+
+[ext_resource type="Script" path="res://Scripts/Dropper/Dropper.gd" id="1_t64sr"]
+[ext_resource type="PackedScene" uid="uid://bim0yagdoc6ip" path="res://Scenes/PokeSprite.tscn" id="2_aybns"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p4tha"]
+
+[node name="Dropper" type="CharacterBody2D"]
+script = ExtResource("1_t64sr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_p4tha")
+disabled = true
+
+[node name="Drop" parent="." instance=ExtResource("2_aybns")]

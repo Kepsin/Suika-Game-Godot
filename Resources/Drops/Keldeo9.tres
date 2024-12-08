@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://crvj1pl5bgo6q"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_rcpoi"]
+[ext_resource type="Texture2D" uid="uid://dsmyn31nfbf3x" path="res://Assets/Water Pokes/keldeo-ordinary.png" id="2_m2tvt"]
+
+[resource]
+script = ExtResource("1_rcpoi")
+sprite = ExtResource("2_m2tvt")
+order_number = 8
+size = 3.0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://vnx5f75cv4y5"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_o5oah"]
+[ext_resource type="Texture2D" uid="uid://d2y7668tw2f6p" path="res://Assets/Water Pokes/palkia.png" id="2_h3jfk"]
+
+[resource]
+script = ExtResource("1_o5oah")
+sprite = ExtResource("2_h3jfk")
+order_number = 10
+size = 3.5
