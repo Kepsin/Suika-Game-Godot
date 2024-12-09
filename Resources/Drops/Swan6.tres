@@ -8,3 +8,4 @@ script = ExtResource("1_tauif")
 sprite = ExtResource("2_dgskm")
 order_number = 5
 size = 2.25
+scoreAmount = 7

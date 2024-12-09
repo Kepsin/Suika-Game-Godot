@@ -4,9 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://bcrbvk1pfxwsd" path="res://Assets/Water Pokes/feebas.png" id="2_ktiy2"]
 
 [node name="Drop" type="RigidBody2D"]
-center_of_mass_mode = 1
-freeze = true
-freeze_mode = 1
 contact_monitor = true
 max_contacts_reported = 2
 script = ExtResource("1_p7mia")

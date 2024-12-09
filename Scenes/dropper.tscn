@@ -6,10 +6,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p4tha"]
 
 [node name="Dropper" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_t64sr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_p4tha")
-disabled = true
 
 [node name="Drop" parent="." instance=ExtResource("2_aybns")]

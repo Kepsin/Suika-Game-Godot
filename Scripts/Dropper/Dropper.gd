@@ -12,7 +12,7 @@ enum playerState {
 var state : playerState
 
 func _ready() -> void:
-	$Drop.set_poke_drop(randf() * 4)
+	$Drop.set_poke_drop(randf() * 5)
 
 func _physics_process(_delta: float) -> void:
 	if (state == playerState.PLAY):
@@ -30,12 +30,13 @@ func _physics_process(_delta: float) -> void:
 func drop_item() -> void:
 	if $Drop:
 		state = playerState.DROP
-		$Drop.gravity_scale = 1
+		$Drop.freeze = 0
 		$Drop.call_deferred("reparent", get_parent().get_child(2))
 		await(get_tree().create_timer(.5).timeout)
 		var next = load("res://Scenes/PokeSprite.tscn")
 		var instance = next.instantiate()
 		instance.position = position - Vector2(position.x, -5)
+		instance.freeze = 1
 		add_child(instance)
 		await(instance.set_poke_drop(randf() * 4))
 	state = playerState.PLAY

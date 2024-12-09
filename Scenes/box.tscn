@@ -1,26 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://jn7127g81ugj"]
+[gd_scene load_steps=5 format=3 uid="uid://jn7127g81ugj"]
 
 [ext_resource type="Texture2D" uid="uid://bjfoymoouulom" path="res://Assets/Box.png" id="1_2gykf"]
+[ext_resource type="Script" path="res://Scripts/Dropper/endgame.gd" id="1_2mujm"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_s1wlv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kscy"]
-size = Vector2(51, 162)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4hvo3"]
+size = Vector2(653, 20)
 
 [node name="Box" type="StaticBody2D"]
+collision_layer = 3
+collision_mask = 3
 physics_material_override = SubResource("PhysicsMaterial_s1wlv")
+script = ExtResource("1_2mujm")
 
 [node name="PlayBox" type="Sprite2D" parent="."]
 texture = ExtResource("1_2gykf")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(-341, -355)
-polygon = PackedVector2Array(0, 2, 1, 714, 681, 715, 681, -7, 664, -6, 664, 705, 12, 703, 10, -2)
+polygon = PackedVector2Array(402, 445, 385, -633, 349, -629, 330, -629, 325, -308, 324, -308, 323, 349, -328, 349, -328, -308, -329, -308, -337, -640, -371, -637, -370, 416)
 
-[node name="InvSide2" type="CollisionShape2D" parent="."]
-position = Vector2(-357, -439)
-shape = SubResource("RectangleShape2D_3kscy")
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(350, -441)
-shape = SubResource("RectangleShape2D_3kscy")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2.5, -362)
+shape = SubResource("RectangleShape2D_4hvo3")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

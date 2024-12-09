@@ -8,3 +8,4 @@ script = ExtResource("1_fx46f")
 sprite = ExtResource("2_pqjb4")
 order_number = 4
 size = 2.0
+scoreAmount = 5
