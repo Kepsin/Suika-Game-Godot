@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="PokeDropList" load_steps=13 format=3 uid="uid://df40qnbmpavxi"]
+
+[ext_resource type="Resource" uid="uid://cj5hmobxt344r" path="res://Resources/Steel Drops/Magn1.tres" id="1_iulbq"]
+[ext_resource type="Resource" uid="uid://b0h1a0wtpm5tv" path="res://Resources/Steel Drops/Klink2.tres" id="2_mfhdd"]
+[ext_resource type="Resource" uid="uid://bsyggirepejsm" path="res://Resources/Steel Drops/Durant3.tres" id="3_pkcar"]
+[ext_resource type="Resource" uid="uid://celno8xq0ds5d" path="res://Resources/Steel Drops/Forre4.tres" id="4_d3kof"]
+[ext_resource type="Resource" uid="uid://ddwkub4odoukb" path="res://Resources/Steel Drops/Lairon5.tres" id="5_rcb4c"]
+[ext_resource type="Resource" uid="uid://bgujokold5v4f" path="res://Resources/Steel Drops/Mawile6.tres" id="6_pbtge"]
+[ext_resource type="Resource" uid="uid://ceqvwm2lmq042" path="res://Resources/Steel Drops/Skarm7.tres" id="7_n2v8t"]
+[ext_resource type="Resource" uid="uid://ddvlypm60omby" path="res://Resources/Steel Drops/Metagross8.tres" id="8_1kksc"]
+[ext_resource type="Resource" uid="uid://c78gffrmhxcik" path="res://Resources/Steel Drops/Jirach9.tres" id="9_ucd3i"]
+[ext_resource type="Resource" uid="uid://bx6wusx4cw0ky" path="res://Resources/Steel Drops/Regis10.tres" id="10_myf6j"]
+[ext_resource type="Resource" uid="uid://drrkvs58fb4al" path="res://Resources/Steel Drops/Dialg11.tres" id="11_bwup5"]
+[ext_resource type="Script" path="res://Resources/DropsList.gd" id="12_iv270"]
+
+[resource]
+script = ExtResource("12_iv270")
+dropList = [ExtResource("1_iulbq"), ExtResource("2_mfhdd"), ExtResource("3_pkcar"), ExtResource("4_d3kof"), ExtResource("5_rcb4c"), ExtResource("6_pbtge"), ExtResource("7_n2v8t"), ExtResource("8_1kksc"), ExtResource("9_ucd3i"), ExtResource("10_myf6j"), ExtResource("11_bwup5")]

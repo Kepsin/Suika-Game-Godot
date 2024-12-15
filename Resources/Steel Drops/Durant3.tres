@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://bsyggirepejsm"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_4167b"]
+[ext_resource type="Texture2D" uid="uid://bhe1cl8sxps6w" path="res://Assets/Steel Pokes/durant.png" id="2_krys1"]
+
+[resource]
+script = ExtResource("1_4167b")
+sprite = ExtResource("2_krys1")
+order_number = 2
+size = 1.5
+scoreAmount = 2

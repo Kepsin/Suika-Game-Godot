@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bim0yagdoc6ip" path="res://Scenes/PokeSprite.tscn" id="2_aybns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_p4tha"]
+size = Vector2(99, 20)
 
 [node name="Dropper" type="CharacterBody2D"]
 collision_layer = 2
@@ -11,6 +12,7 @@ collision_mask = 2
 script = ExtResource("1_t64sr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_p4tha")
 
 [node name="Drop" parent="." instance=ExtResource("2_aybns")]

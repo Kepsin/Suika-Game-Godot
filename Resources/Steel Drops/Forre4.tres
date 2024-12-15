@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://celno8xq0ds5d"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_yb2ir"]
+[ext_resource type="Texture2D" uid="uid://knbh5o4fhrp4" path="res://Assets/Steel Pokes/forretress.png" id="2_uxhra"]
+
+[resource]
+script = ExtResource("1_yb2ir")
+sprite = ExtResource("2_uxhra")
+order_number = 3
+size = 1.75
+scoreAmount = 4

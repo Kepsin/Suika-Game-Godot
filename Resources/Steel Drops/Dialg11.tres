@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://drrkvs58fb4al"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_j2b60"]
+[ext_resource type="Texture2D" uid="uid://umtc8efpo45t" path="res://Assets/Steel Pokes/dialga.png" id="2_ihvqy"]
+
+[resource]
+script = ExtResource("1_j2b60")
+sprite = ExtResource("2_ihvqy")
+order_number = 10
+size = 3.5
+scoreAmount = 100

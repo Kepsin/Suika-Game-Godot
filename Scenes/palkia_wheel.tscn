@@ -1,0 +1,97 @@
+[gd_scene load_steps=14 format=3 uid="uid://5p383djb753o"]
+
+[ext_resource type="Texture2D" uid="uid://cexqtt8jhihw8" path="res://Assets/Circle.png" id="1_3ynqo"]
+[ext_resource type="Script" path="res://Scripts/wheel_unlock.gd" id="1_4ynah"]
+[ext_resource type="Texture2D" uid="uid://bcrbvk1pfxwsd" path="res://Assets/Water Pokes/feebas.png" id="2_gkt1l"]
+[ext_resource type="Texture2D" uid="uid://pgodbtx2fhin" path="res://Assets/Water Pokes/spheal.png" id="3_xal5l"]
+[ext_resource type="Texture2D" uid="uid://dejo1fovifiyt" path="res://Assets/Water Pokes/squirtle.png" id="4_51waf"]
+[ext_resource type="Texture2D" uid="uid://beye6t514l1uk" path="res://Assets/Water Pokes/lumineon-f.png" id="5_ky415"]
+[ext_resource type="Texture2D" uid="uid://rchty5m3vfix" path="res://Assets/Water Pokes/vaporeon.png" id="6_8ys1k"]
+[ext_resource type="Texture2D" uid="uid://b2gw4iw8gj3l8" path="res://Assets/Water Pokes/swanna.png" id="7_2cj5r"]
+[ext_resource type="Texture2D" uid="uid://dhdi8wb2j1opk" path="res://Assets/Water Pokes/quagsire-f.png" id="8_8g3uf"]
+[ext_resource type="Texture2D" uid="uid://cswx6cfiu8ixe" path="res://Assets/Water Pokes/simipour.png" id="9_hrb2m"]
+[ext_resource type="Texture2D" uid="uid://dsmyn31nfbf3x" path="res://Assets/Water Pokes/keldeo-ordinary.png" id="10_dl4u6"]
+[ext_resource type="Texture2D" uid="uid://ykoajuxueymt" path="res://Assets/Water Pokes/suicune.png" id="11_wkalj"]
+[ext_resource type="Texture2D" uid="uid://d2y7668tw2f6p" path="res://Assets/Water Pokes/palkia.png" id="12_80646"]
+
+[node name="Wheel" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_right = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4ynah")
+
+[node name="Circle" type="Sprite2D" parent="."]
+scale = Vector2(1.33, 1.33)
+texture = ExtResource("1_3ynqo")
+
+[node name="Feebas" type="Sprite2D" parent="Circle"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(175.94, -6.76692)
+scale = Vector2(0.75188, 0.75188)
+texture = ExtResource("2_gkt1l")
+
+[node name="Spheal" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(190.226, 45.8647)
+scale = Vector2(0.93985, 0.93985)
+texture = ExtResource("3_xal5l")
+
+[node name="Squirtle" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(177.444, 107.519)
+scale = Vector2(1.12782, 1.12782)
+texture = ExtResource("4_51waf")
+
+[node name="Lumineon-f" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(137.594, 179.699)
+scale = Vector2(1.31579, 1.31579)
+texture = ExtResource("5_ky415")
+
+[node name="Vaporeon" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(46.6165, 215.038)
+scale = Vector2(1.50376, 1.50376)
+texture = ExtResource("6_8ys1k")
+
+[node name="Swanna" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(-44.3609, 208.271)
+scale = Vector2(1.69173, 1.69173)
+texture = ExtResource("7_2cj5r")
+
+[node name="Quagsire-f" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(-154.887, 160.15)
+scale = Vector2(1.8797, 1.8797)
+texture = ExtResource("8_8g3uf")
+
+[node name="Simipour" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(-218.045, 32.3308)
+scale = Vector2(2.06767, 2.06767)
+texture = ExtResource("9_hrb2m")
+
+[node name="Keldeo-ordinary" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(-168.421, -88.7218)
+scale = Vector2(1.88485, 1.88485)
+texture = ExtResource("10_dl4u6")
+
+[node name="Suicune" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+position = Vector2(-53.3835, -147.368)
+scale = Vector2(2.13377, 2.13377)
+texture = ExtResource("11_wkalj")
+
+[node name="Palkia" type="Sprite2D" parent="Circle"]
+modulate = Color(0.00351917, 0.00351917, 0.00351917, 1)
+texture_filter = 2
+position = Vector2(115.789, -145.113)
+scale = Vector2(2, 2)
+texture = ExtResource("12_80646")

@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://uq4ix5fl3ql2"]
+
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_hajex"]
+[ext_resource type="PackedScene" uid="uid://jn7127g81ugj" path="res://Scenes/box.tscn" id="1_uke5t"]
+[ext_resource type="PackedScene" uid="uid://cxq35r4qijama" path="res://Scenes/dropper.tscn" id="3_3kfa0"]
+[ext_resource type="Texture2D" uid="uid://ch6ouolybo3nt" path="res://Assets/Backgrounds/Beach.jpg" id="4_bg5mg"]
+[ext_resource type="PackedScene" uid="uid://ddidoseqtm1qt" path="res://Scenes/game_over.tscn" id="5_2dnt8"]
+[ext_resource type="PackedScene" uid="uid://5p383djb753o" path="res://Scenes/palkia_wheel.tscn" id="6_8ty5p"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_hajex")
+
+[node name="Dropper" parent="." instance=ExtResource("3_3kfa0")]
+position = Vector2(456, 52)
+
+[node name="Box" parent="." instance=ExtResource("1_uke5t")]
+position = Vector2(510, 377)
+scale = Vector2(0.700953, 0.700953)
+
+[node name="InBox" type="Node2D" parent="."]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Score" type="Label" parent="UI"]
+layout_mode = 1
+offset_left = 13.0
+offset_top = -1.0
+offset_right = 183.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 8
+theme_override_font_sizes/font_size = 45
+text = "Score: 0"
+
+[node name="Beach" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(582, 326)
+texture = ExtResource("4_bg5mg")
+
+[node name="Game Over" parent="." instance=ExtResource("5_2dnt8")]
+visible = false
+offset_left = 574.0
+offset_top = 297.0
+offset_right = 574.0
+offset_bottom = 297.0
+scale = Vector2(1.58812, 1.58812)
+
+[node name="Wheel" parent="." instance=ExtResource("6_8ty5p")]
+offset_left = 959.0
+offset_top = 354.0
+offset_right = 959.0
+offset_bottom = 354.0
+scale = Vector2(0.5, 0.5)

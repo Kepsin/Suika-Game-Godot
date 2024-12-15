@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://bgujokold5v4f"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_y02s8"]
+[ext_resource type="Texture2D" uid="uid://b3v8yyhski3pn" path="res://Assets/Steel Pokes/mawile.png" id="2_emrqc"]
+
+[resource]
+script = ExtResource("1_y02s8")
+sprite = ExtResource("2_emrqc")
+order_number = 5
+size = 2.25
+scoreAmount = 7

@@ -11,6 +11,7 @@ func set_poke_drop(pokeNum : int) -> void:
 	%Sprite.scale = pokeDrop.get_size()
 	myScale = pokeDrop.get_size()
 	set_bitmap_shape()
+	SignalBus.emit_unlock_character(pokeDrop)
 
 func get_pokeDrop() -> PokeDrop:
 	return pokeDrop
@@ -20,7 +21,6 @@ func set_bitmap_shape():
 	if (%Sprite.texture):
 		bitMap.create_from_image_alpha(%Sprite.texture.get_image())
 		bitMap.resize(Vector2i(bitMap.get_size().x * %Sprite.scale.x, bitMap.get_size().y * %Sprite.scale.y))
-		print(bitMap.get_size())
 		var polys = bitMap.opaque_to_polygons(Rect2(Vector2.ZERO, bitMap.get_size()), 4)
 		for poly in polys:
 			var col = CollisionPolygon2D.new()
@@ -41,5 +41,4 @@ func _on_body_entered(body: Node) -> void:
 				new.position = (body.position + position) / 2
 				new.freeze = 0
 				SignalBus.emit_update_game_score(new.get_pokeDrop().get_score_amount())
-				print(new.get_pokeDrop().get_score_amount())
 				queue_free()

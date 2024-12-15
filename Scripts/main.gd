@@ -10,3 +10,6 @@ func _ready() -> void:
 func update_score(updScore : int):
 	score += updScore
 	$UI/Score.text = ("Score: " + str(score))
+
+func get_score() -> int:
+	return score

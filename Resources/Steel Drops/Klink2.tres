@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://b0h1a0wtpm5tv"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_qr6qt"]
+[ext_resource type="Texture2D" uid="uid://cl75bt3qyk716" path="res://Assets/Steel Pokes/klink.png" id="2_c4d0y"]
+
+[resource]
+script = ExtResource("1_qr6qt")
+sprite = ExtResource("2_c4d0y")
+order_number = 1
+size = 1.25
+scoreAmount = 1

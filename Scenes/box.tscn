@@ -1,12 +1,12 @@
 [gd_scene load_steps=5 format=3 uid="uid://jn7127g81ugj"]
 
-[ext_resource type="Texture2D" uid="uid://bjfoymoouulom" path="res://Assets/Box.png" id="1_2gykf"]
 [ext_resource type="Script" path="res://Scripts/Dropper/endgame.gd" id="1_2mujm"]
+[ext_resource type="Texture2D" uid="uid://disqig1ss6e3b" path="res://Assets/Droppers/Palkia.png" id="2_1pqpc"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_s1wlv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4hvo3"]
-size = Vector2(653, 20)
+size = Vector2(692, 19)
 
 [node name="Box" type="StaticBody2D"]
 collision_layer = 3
@@ -15,18 +15,28 @@ physics_material_override = SubResource("PhysicsMaterial_s1wlv")
 script = ExtResource("1_2mujm")
 
 [node name="PlayBox" type="Sprite2D" parent="."]
-texture = ExtResource("1_2gykf")
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(402, 445, 385, -633, 349, -629, 330, -629, 325, -308, 324, -308, 323, 349, -328, 349, -328, -308, -329, -308, -337, -640, -371, -637, -370, 416)
+position = Vector2(41, -44.5)
+scale = Vector2(1.4475, 1.41167)
+texture = ExtResource("2_1pqpc")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-2.5, -362)
+position = Vector2(-46, -365.5)
 shape = SubResource("RectangleShape2D_4hvo3")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(4.71609, 0)
+scale = Vector2(1.00432, 1)
+color = Color(1, 1, 1, 0.0705882)
+polygon = PackedVector2Array(-397, -383, -47.075, -383.504, 297, -384, 297, -355, -396, -355)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(41, -44.5)
+scale = Vector2(1.4475, 1.41167)
+polygon = PackedVector2Array(169.948, -280.873, 187, -280.7, 182, -279, 179.5, -279, 174.5, -273, 173.2, -273, 171.2, -266, 169.9, -266, 171, -254.9, 171, -251.6, 175, -246.7, 175, -244.4, 182, -240.4, 182, 253.4, 178.8, 255, 176.5, 255, 171.5, 261, 170.4, 261, 168, 265.8, 168, 268.4, 166, 269.4, 166, 270, -287.4, 270, -288.4, 268, -289, 268, -289, 264.7, -292, 260.6, -292, 258.5, -300.7, 252, -301, -242.6, -299.6, -244, -298.3, -244, -297.3, -247, -296.2, -247, -294, -254.9, -294, -261.2, -298, -269.2, -298, -271.5, -302, -274.5, -302, -275.7, -308, -277.7, -308, -279, -295.682, -236.953, -265.285, -400.589, -337.824, -399.174, -326.2, -277, -328.5, -277, -333.5, -271, -334.8, -271, -336.8, -264, -338, -264, -338, -252.7, -335, -247.7, -335, -245.4, -333, -244.4, -333, -242.4, -325, -238.4, -325, -237.2, -312.1, -235, -312, 249.3, -320.2, 253, -322.5, 253, -327.5, 259, -328.8, 259, -329.8, 263, -330.7, 263, -332, 266.8, -332, 277.3, -329, 282.3, -329, 284.6, -327, 285.6, -327, 287.6, -315.3, 294, -305.8, 294, -299.8, 291, -297.5, 291, -289.5, 281, 167.5, 281, 173, 289.3, 173, 290.6, 183.8, 296, 193.2, 296, 199.2, 293, 201.5, 293, 205.5, 288, 206.7, 288, 211, 277.2, 211, 270.8, 207, 262.8, 207, 260.5, 203, 257.5, 203, 256.3, 193, 252.3, 193, -237.4, 196.2, -239, 200.4, -239, 202.4, -241, 204.5, -241, 210.5, -249, 211.8, -249, 214, -256.9, 214, -263.2, 210, -271.2, 210, -273.5, 206, -276.5, 206, -277.7, 200, -279.7, 200, -281, 214.853, -409.799, 166.494, -411.216)
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

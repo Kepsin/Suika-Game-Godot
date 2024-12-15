@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://ddvlypm60omby"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_rrypm"]
+[ext_resource type="Texture2D" uid="uid://b84dtnr1x5amb" path="res://Assets/Steel Pokes/metagross.png" id="2_52as1"]
+
+[resource]
+script = ExtResource("1_rrypm")
+sprite = ExtResource("2_52as1")
+order_number = 7
+size = 2.75
+scoreAmount = 15

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://ddwkub4odoukb"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_caewr"]
+[ext_resource type="Texture2D" uid="uid://ccl2t5sv61bmh" path="res://Assets/Steel Pokes/lairon.png" id="2_qywrp"]
+
+[resource]
+script = ExtResource("1_caewr")
+sprite = ExtResource("2_qywrp")
+order_number = 4
+size = 2.0
+scoreAmount = 5

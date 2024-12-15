@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://ceqvwm2lmq042"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_r5knp"]
+[ext_resource type="Texture2D" uid="uid://ccke7p50n1iyy" path="res://Assets/Steel Pokes/skarmory.png" id="2_vq1ff"]
+
+[resource]
+script = ExtResource("1_r5knp")
+sprite = ExtResource("2_vq1ff")
+order_number = 6
+size = 2.5
+scoreAmount = 10

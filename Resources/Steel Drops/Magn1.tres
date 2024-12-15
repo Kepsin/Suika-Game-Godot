@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PokeDrop" load_steps=3 format=3 uid="uid://cj5hmobxt344r"]
+
+[ext_resource type="Script" path="res://Resources/Drop.gd" id="1_y75ws"]
+[ext_resource type="Texture2D" uid="uid://cgt8s2gb6je2p" path="res://Assets/Steel Pokes/magnemite.png" id="2_26rvv"]
+
+[resource]
+script = ExtResource("1_y75ws")
+sprite = ExtResource("2_26rvv")
+order_number = 0
+size = 1.0
+scoreAmount = 0

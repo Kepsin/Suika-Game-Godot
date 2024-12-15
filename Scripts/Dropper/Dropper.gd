@@ -35,7 +35,7 @@ func drop_item() -> void:
 		await(get_tree().create_timer(.5).timeout)
 		var next = load("res://Scenes/PokeSprite.tscn")
 		var instance = next.instantiate()
-		instance.position = position - Vector2(position.x, -5)
+		instance.position = position - Vector2(position.x, position.y)
 		instance.freeze = 1
 		add_child(instance)
 		await(instance.set_poke_drop(randf() * 4))
